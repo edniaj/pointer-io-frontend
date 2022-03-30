@@ -24,14 +24,16 @@ function App() {
         <Routes>
 
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/about" element={<About />} />
-          <Route path="/Job" element={<Job />}/>
+          <Route path="/job" element={<Job />} />
+          <Route path="/job/:id" element={<JobDetails />} />
+          <Route path="/judge" element={<Judge />} />
 
-          {/* <Route path="" elemetnt={}/> */}
-
-
+          {/* <Route path="" element={}/> */}
           {/* Handling error routes */}
-          <Route path="*" element={ <Error/>} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </div>
