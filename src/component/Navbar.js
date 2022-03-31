@@ -1,15 +1,18 @@
+import { AppBar, Toolbar } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import NavbarIcon from './NavbarIcon'
+
 function Navbar() {
   return (
-    <nav>
-    nav
-    <br />
-    <Link to="/">Home</Link>
-    <br />
-    nav
-  </nav>
+    
+    <AppBar>
+      <Toolbar>
+        <NavbarIcon test='test'/>
+        
+      </Toolbar>
+    </AppBar>
   )
 }
 
